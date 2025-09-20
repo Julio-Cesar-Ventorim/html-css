@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(19, 19, 19);
+    color: rgb(231, 231, 231);
+    text-align: center;
+    padding: 20px;
+}
+
+header p > a {
+    color: rgb(231, 231, 231);
+    text-decoration: none;
+}
+
+header p > a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+    height: 100vh;
+}
+
+main p {
+    margin: 0px;
+}
+
+footer {
+    padding: 5px;
+    background-color: rgb(19, 19, 19);
+    color: rgb(231, 231, 231);
+    text-align: center;
+}
+
+footer p {
+    margin: 0px;
+}
+
+footer p > a {
+    color: rgb(231, 231, 231);
+    text-decoration: none;
+}
+
+footer p > a:hover {
+    text-decoration: underline;
+}
