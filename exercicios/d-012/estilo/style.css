@@ -1,8 +1,13 @@
 @charset "UTF-8";
 
-body {
-    background-color: black;
+* {
     margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: black;
 }
 
 header {
@@ -12,22 +17,45 @@ header {
     padding: 20px;
 }
 
+header h1 {
+    padding-top: 40px;
+    font-variant: small-caps;
+}
+
+header p {
+    padding-bottom: 40px;
+}
+
 header p > a {
     color: rgb(231, 231, 231);
     text-decoration: none;
+    font-weight: bolder;
 }
 
 header p > a:hover {
     text-decoration: underline;
 }
 
-main {
-    background-color: white;
-    height: 100vh;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
 }
 
-main p {
-    margin: 0px;
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.219);    
 }
 
 footer {
@@ -37,13 +65,10 @@ footer {
     text-align: center;
 }
 
-footer p {
-    margin: 0px;
-}
-
 footer p > a {
     color: rgb(231, 231, 231);
     text-decoration: none;
+    font-weight: bolder;
 }
 
 footer p > a:hover {
