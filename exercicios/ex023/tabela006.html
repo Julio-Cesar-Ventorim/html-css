@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 20px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        div#container {
+            overflow-x: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum optio accusamus explicabo nisi pariatur, magnam eos ab dolor asperiores aliquam nemo, deserunt ut, omnis delectus reiciendis. Distinctio dolores perferendis veniam.</p>
+    <div id="container">
+        <table>
+            <caption>Tabelas Responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Caneta</td>
+                    <td>100</td>
+                    <td>120</td>
+                    <td>130</td>
+                    <td>140</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>Lápis</td>
+                    <td>90</td>
+                    <td>110</td>
+                    <td>115</td>
+                    <td>130</td>
+                    <td>145</td>
+                </tr>
+                <tr>
+                    <td>Borracha</td>
+                    <td>80</td>
+                    <td>100</td>
+                    <td>105</td>
+                    <td>120</td>
+                    <td>135</td>
+                </tr>
+                <tr>
+                    <td>Caderno</td>
+                    <td>70</td>
+                    <td>90</td>
+                    <td>95</td>
+                    <td>110</td>
+                    <td>125</td>
+                </tr>
+                <tr>
+                    <td>Mochila</td>
+                    <td>60</td>
+                    <td>80</td>
+                    <td>85</td>
+                    <td>100</td>
+                    <td>115</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
