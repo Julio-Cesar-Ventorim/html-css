@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Flexbox</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
-        <nav>
+        <img src="Rikka Takanashi.jpg" alt="uma imagem da Rikka para o menu" onclick="clickMenu()">
+        <nav id="itens">
             <a href="#">Opção 1</a>
             <a href="#">Opção 2</a>
             <a href="#">Opção 3</a>
@@ -23,5 +25,22 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus eos quaerat quam ipsum totam id est molestias, exercitationem magni illum porro, debitis dolores repellendus, harum eaque dolore? Expedita, ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae architecto eius dolorem quis voluptatum dolores rem consequatur, quo laboriosam itaque suscipit aspernatur deleniti soluta ex ipsam? Dolorum dolorem possimus quam.</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae fugiat, ipsa quam, architecto recusandae nulla qui cumque omnis culpa excepturi, error porro sit eius sint sed vel pariatur enim atque?</p>
     </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 600) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
