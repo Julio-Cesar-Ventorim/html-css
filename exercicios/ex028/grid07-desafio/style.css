@@ -1,36 +1,51 @@
 @charset "UTF-8";
 
-.container {
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.caixa {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#container {
+    width: 90vw;
+    height: 60vh;
+
     display: grid;
     grid-template-rows: 2fr 1fr 5fr 1fr;
-    grid-template-columns: 200px 400px 200px;
+    grid-template-columns: 1fr 200px;
 }
 
-.topo {
+#topo {
     background-color: blue;
 
-    grid-area: 1/1/2/4;
+    grid-area: 1/1/2/-1;
 }
 
-.menu {
+#menu {
     background-color: yellow;
 
-    grid-area: 2/1/3/4;
+    grid-area: 2/1/3/-1;
 }
 
-.principal {
+#principal {
     background-color: red;
 
     grid-area: 3/1/4/3;
 }
 
-.secundario {
+#secundario {
     background-color: lime;
 
-    grid-area: 3/3/4/4;
+    grid-area: 3/2/4/3;
 }
 
-.rodape {
+#rodape {
     background-color: magenta;
 
     grid-area: -1/1/-2/-1;
